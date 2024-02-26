@@ -8,7 +8,6 @@ public class Eboulement_trigger : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-
             GameObject.Find("Plateform").GetComponent<DestructiblePlatform>().enabled = true;
         }
     }
