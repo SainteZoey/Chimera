@@ -8,8 +8,7 @@ public class DestructiblePlatform : MonoBehaviour
     public float ExplosionRadius = 10;
     public Transform explosionSource;
 
-    // Start is called before the first frame update
-    void Start()
+    public void PlayExplosion()
     {
         Destroy(explosionSource.position);
     }
