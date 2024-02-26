@@ -8,7 +8,8 @@ public class Spawn_Boss : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            gameObject.GetComponent<Animator>().SetBool("Apparition",true);
+            //Instantiate("Boss_Snake");
+            GameObject.Find("Boos_Snake").GetComponent<Animator>().SetBool("Apparition",true);
         }
     }
 }
