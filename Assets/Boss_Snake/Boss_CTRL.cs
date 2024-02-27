@@ -10,6 +10,8 @@ public class Boss_CTRL : MonoBehaviour
     public Rigidbody Rb;
     public float Speed;
 
+    public static Boss_CTRL CurrentBoss;
+
     void FixedUpdate()
     {
         if (SpawnTiming > 0.0f)
@@ -17,8 +19,7 @@ public class Boss_CTRL : MonoBehaviour
             SpawnTiming -= Time.fixedDeltaTime;
             if (SpawnTiming <= 0.0f)
             {
-                //anim rampe
-
+                gameObject.GetComponent<Animator>();
             }
         }
         else
@@ -27,11 +28,11 @@ public class Boss_CTRL : MonoBehaviour
         }
     }
 
-     void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            SceneManager.LoadScene("Scenes/GameOver");
-        }
-    }
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Player")
+    //    {
+    //        SceneManager.LoadScene("Scenes/GameOver");
+    //    }
+    //}
 }

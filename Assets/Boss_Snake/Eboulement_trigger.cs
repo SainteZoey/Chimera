@@ -6,14 +6,17 @@ public class Eboulement_trigger : MonoBehaviour
 {
 
     public DestructiblePlatform destructiblePlatform;
-    public Boss_CTRL bossCrtl;
-    private void OnTriggerEnter(Collider other)
+
+    void Start()
+    {
+    }
+
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             destructiblePlatform.PlayExplosion();
-            bossCrtl.enabled = false;
-
+            Boss_CTRL.CurrentBoss.enabled = false;
         }
     }
 
@@ -24,6 +27,5 @@ public class Eboulement_trigger : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawLine(transform.position, destructiblePlatform.transform.position);
         }
-
     }
 }

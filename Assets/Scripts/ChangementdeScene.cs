@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameOver : MonoBehaviour
+public class ChangementdeScene : MonoBehaviour
 {
     public Button button_return;
+
+    public Object sceneToLoad;
 
     void Start()
     {
@@ -16,6 +18,6 @@ public class GameOver : MonoBehaviour
     void action_button_retour()
     {
         Debug.Log("clic sur bouton");
-        SceneManager.LoadScene("Scenes/"); //ajouter le nom de main scène
+        SceneManager.LoadScene(sceneToLoad.name); //ajouter le nom de main scène
     }
 }

@@ -1,19 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Spawn_Boss : MonoBehaviour
 {
 
-    private GameObject Boss;
+    private Boss_CTRL Boss;
     public GameObject GameObjectToSpawn;
     public Transform spawnPosition;
+
+    public bool playOnce;
+    bool played;
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && !playOnce || !played)
         {
-            Boss = Instantiate(GameObjectToSpawn, spawnPosition.position, spawnPosition.rotation);
-            GameObject.Find("Boss_Snake").GetComponent<Animator>().SetBool("Apparition",true);
+            played = true;
+            Boss = Instantiate(GameObjectToSpawn, spawnPosition.position, spawnPosition.rotation).GetComponent<Boss_CTRL>();
+            Boss.GetComponentInChildren<Animator>().SetBool("Apparition",true);
+            Boss_CTRL.CurrentBoss = Boss;
         }
     }
 

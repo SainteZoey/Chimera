@@ -45,6 +45,9 @@ GameObject:
   - component: {fileID: 5095812624910046691}
   - component: {fileID: 6266281598953623903}
   - component: {fileID: 8739460007210391445}
+  - component: {fileID: 5513719329754232286}
+  - component: {fileID: 5100734793609360391}
+  - component: {fileID: 1105873503546231501}
   m_Layer: 8
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -88,13 +91,13 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.8
+  m_Height: 0.7
   m_Radius: 0.28
   m_SlopeLimit: 45
   m_StepOffset: 0.25
   m_SkinWidth: 0.02
   m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0.93, z: 0}
+  m_Center: {x: 0, y: 0.35, z: 0}
 --- !u!114 &8811617408318127151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,6 +277,54 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!136 &5513719329754232286
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9062886675832784795}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Height: 0.45439297
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.22719648, z: 0}
+--- !u!114 &5100734793609360391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9062886675832784795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b09d18ce32eb7704fbd9afe856689b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1105873503546231501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9062886675832784795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037c0c7f96c91774394c5fcf52aabeaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockAtStart: 1
 --- !u!1001 &8578191115448430626
 PrefabInstance:
   m_ObjectHideFlags: 0

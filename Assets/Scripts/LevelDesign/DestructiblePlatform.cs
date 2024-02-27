@@ -13,11 +13,6 @@ public class DestructiblePlatform : MonoBehaviour
         Destroy(explosionSource.position);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void Destroy(Vector3 positionExplosion)
     {
         Rigidbody[] Bodies = GetComponentsInChildren<Rigidbody>();
