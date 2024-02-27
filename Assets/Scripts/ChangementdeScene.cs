@@ -18,6 +18,6 @@ public class ChangementdeScene : MonoBehaviour
     void action_button_retour()
     {
         Debug.Log("clic sur bouton");
-        SceneManager.LoadScene(sceneToLoad.name); //ajouter le nom de main scène
+        SceneManager.LoadScene(sceneToLoad.name);
     }
 }
