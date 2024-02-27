@@ -17,6 +17,7 @@ public class Eboulement_trigger : MonoBehaviour
         {
             destructiblePlatform.PlayExplosion();
             Boss_CTRL.CurrentBoss.enabled = false;
+            
         }
     }
 

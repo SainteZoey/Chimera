@@ -76,7 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnTiming: 1
   Rb: {fileID: 7852680280273475934}
-  Speed: 3
+  Speed: 8
 --- !u!1 &2676016468733974477
 GameObject:
   m_ObjectHideFlags: 0
