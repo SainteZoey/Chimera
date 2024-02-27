@@ -6,11 +6,14 @@ public class Eboulement_trigger : MonoBehaviour
 {
 
     public DestructiblePlatform destructiblePlatform;
+    public Boss_CTRL bossCrtl;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
             destructiblePlatform.PlayExplosion();
+            bossCrtl.enabled = false;
+
         }
     }
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Boss_CTRL : MonoBehaviour
 {
@@ -22,9 +23,15 @@ public class Boss_CTRL : MonoBehaviour
         }
         else
         {
-            Rb.MovePosition(Rb.transform.position +  Rb.transform.forward * Speed * Time.fixedDeltaTime);
+            Rb.MovePosition(Rb.transform.position + Rb.transform.forward * Speed * Time.fixedDeltaTime);
         }
     }
 
-
+     void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            SceneManager.LoadScene("Scenes/GameOver");
+        }
+    }
 }
