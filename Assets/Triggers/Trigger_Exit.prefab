@@ -119,3 +119,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destructiblePlatform: {fileID: 0}
+  desactivateBossDelay: 2

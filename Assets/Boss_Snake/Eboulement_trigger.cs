@@ -6,18 +6,38 @@ public class Eboulement_trigger : MonoBehaviour
 {
 
     public DestructiblePlatform destructiblePlatform;
-
-    void Start()
+    bool HasPlayed;
+    public float desactivateBossDelay;
+    GameObject bossdisactived;
+    void Update()
     {
+        if (HasPlayed == true)
+        {
+            desactivateBossDelay -= Time.deltaTime;
+            if (desactivateBossDelay <= 0.0f)
+            {
+                bossdisactived.SetActive(false);
+                gameObject.SetActive(false);
+            }
+        }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+
+        if (HasPlayed == false)
         {
-            destructiblePlatform.PlayExplosion();
-            Boss_CTRL.CurrentBoss.enabled = false;
-            
+
+            if (other.gameObject.tag == "Player")
+            {
+                HasPlayed = true;
+                destructiblePlatform.PlayExplosion();
+
+                Boss_CTRL.CurrentBoss.enabled = false;
+                bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
+
+
+            }
         }
     }
 
