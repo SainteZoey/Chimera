@@ -32,7 +32,7 @@ public class Boss_CTRL : MonoBehaviour
     {
         if (other.gameObject.tag == "Death")
         {
-            gameObject.GetComponent<Animator>().SetBool("Death", true);
+            gameObject.GetComponentInChildren<Animator>().SetBool("Death", true);
         }
-   }
+    }
 }
