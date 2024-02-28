@@ -10,6 +10,10 @@ public class MeshRendererDeactivator : MonoBehaviour
         {
             meshRenderer.enabled = false;
         }
-        GetComponent<MeshRenderer>().enabled = false;
+        var renderer = GetComponent<MeshRenderer>();
+        if(renderer != null)
+        {
+            renderer.enabled = false;
+        }
     }
 }
