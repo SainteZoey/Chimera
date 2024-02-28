@@ -48,6 +48,7 @@ MonoBehaviour:
   ExplosionForce: 10
   ExplosionRadius: 10
   explosionSource: {fileID: 0}
+  fx: {fileID: 1040608886635896, guid: a97415c6b57076f41a6621a7b51d63a3, type: 3}
 --- !u!1001 &5239774130135735744
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -27,4 +27,5 @@ public class Boss_CTRL : MonoBehaviour
             Rb.MovePosition(Rb.transform.position + Rb.transform.forward * Speed * Time.fixedDeltaTime);
         }
     }
+
 }
