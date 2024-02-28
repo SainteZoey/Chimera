@@ -8,6 +8,7 @@ public class DestructiblePlatform : MonoBehaviour
     public float ExplosionRadius = 10;
     public Transform explosionSource;
     public GameObject fx;
+
     public void PlayExplosion()
     {
         Destroy(explosionSource.position);
@@ -24,4 +25,6 @@ public class DestructiblePlatform : MonoBehaviour
             b.AddExplosionForce(ExplosionForce, positionExplosion, ExplosionRadius);
         }
     }
+
+    
 }

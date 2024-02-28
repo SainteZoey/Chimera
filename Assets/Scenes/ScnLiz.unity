@@ -703,27 +703,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1852466128 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1665833713597680253, guid: e7aa6ea73d9a17b428efc8c61b55666d,
+--- !u!114 &1852466131 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3913519901838752047, guid: e7aa6ea73d9a17b428efc8c61b55666d,
     type: 3}
   m_PrefabInstance: {fileID: 2001859990}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1852466130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1852466128}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96debbabb3b29af44bc40940a2fc361f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ExplosionForce: 10
-  ExplosionRadius: 10
-  explosionSource: {fileID: 0}
 --- !u!1001 &2001859990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -736,6 +727,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Plateform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1665833713597680253, guid: e7aa6ea73d9a17b428efc8c61b55666d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2041795581099921607, guid: e7aa6ea73d9a17b428efc8c61b55666d,
         type: 3}
@@ -787,6 +783,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3913519901838752047, guid: e7aa6ea73d9a17b428efc8c61b55666d,
+        type: 3}
+      propertyPath: explosionSource
+      value: 
+      objectReference: {fileID: 2865734368883487859}
+    - target: {fileID: 3913519901838752047, guid: e7aa6ea73d9a17b428efc8c61b55666d,
+        type: 3}
+      propertyPath: destructiblePlatform
+      value: 
+      objectReference: {fileID: 1852466131}
     - target: {fileID: 5675714667159757276, guid: e7aa6ea73d9a17b428efc8c61b55666d,
         type: 3}
       propertyPath: ExplosionForce
@@ -802,14 +808,25 @@ PrefabInstance:
       propertyPath: explosionSource
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5993521571529180142, guid: e7aa6ea73d9a17b428efc8c61b55666d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919197076649919813, guid: e7aa6ea73d9a17b428efc8c61b55666d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569778775830738850, guid: e7aa6ea73d9a17b428efc8c61b55666d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1665833713597680253, guid: e7aa6ea73d9a17b428efc8c61b55666d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1852466130}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7aa6ea73d9a17b428efc8c61b55666d, type: 3}
 --- !u!1001 &868955308515309123
 PrefabInstance:
@@ -868,6 +885,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653399836069010349, guid: 7378a04d30f5c474da0f30674937cce2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0072737737
+      objectReference: {fileID: 0}
+    - target: {fileID: 1653399836069010349, guid: 7378a04d30f5c474da0f30674937cce2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.40987
       objectReference: {fileID: 0}
     - target: {fileID: 9070535290451847634, guid: 7378a04d30f5c474da0f30674937cce2,
         type: 3}
@@ -964,6 +991,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84a0e6939553c64f94d517b57b92a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2865734368883487859 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2212343060832279350, guid: bb594455e751c7d49a3372eb105f6e8c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2865734368883487854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3223969300246524131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -977,6 +1010,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: AdditiveSceneLoader
       objectReference: {fileID: 0}
+    - target: {fileID: 194943309552948433, guid: 6f73a5d15dd4c464eac74a29d27e96a3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137058760126155365, guid: 6f73a5d15dd4c464eac74a29d27e96a3,
+        type: 3}
+      propertyPath: additiveScenes.Array.data[0]
+      value: 
+      objectReference: {fileID: 102900000, guid: d2cf62028bc7205429fa6608aaba54be,
+        type: 3}
     - target: {fileID: 9220618478013395666, guid: 6f73a5d15dd4c464eac74a29d27e96a3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1049,7 +1093,7 @@ PrefabInstance:
         type: 3}
       propertyPath: destructiblePlatform
       value: 
-      objectReference: {fileID: 1852466130}
+      objectReference: {fileID: 1852466131}
     - target: {fileID: 7948062079477748030, guid: 27ec9c03fadc3be4990edd994a3e853c,
         type: 3}
       propertyPath: m_LocalPosition.x
