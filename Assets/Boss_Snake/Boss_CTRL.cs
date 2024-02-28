@@ -27,12 +27,4 @@ public class Boss_CTRL : MonoBehaviour
             Rb.MovePosition(Rb.transform.position + Rb.transform.forward * Speed * Time.fixedDeltaTime);
         }
     }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Death")
-        {
-            gameObject.GetComponentInChildren<Animator>().SetBool("Death", true);
-        }
-    }
 }
