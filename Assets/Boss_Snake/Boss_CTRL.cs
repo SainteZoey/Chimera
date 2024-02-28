@@ -27,12 +27,13 @@ public class Boss_CTRL : MonoBehaviour
         }
     }
     
-    
+    // les trigger des différentes fins sont bug + boss dead s'arète pooo + le truc en dessous ( rochers qui explosent au passage du monstre) + cam est chelou ( saut / obstacles )
+
     /*void OnTriggerEnter(Collider other)
    {
        if (other.gameObject.Layer == "Obstacles")
        {
-
+            DestructiblePlatform = true;
        }
    }*/
 }
