@@ -9,7 +9,6 @@ public class Boss_CTRL : MonoBehaviour
     public float SpawnTiming;
     public Rigidbody Rb;
     public float Speed;
-
     public static Boss_CTRL CurrentBoss;
 
     void FixedUpdate()
@@ -27,5 +26,13 @@ public class Boss_CTRL : MonoBehaviour
             Rb.MovePosition(Rb.transform.position + Rb.transform.forward * Speed * Time.fixedDeltaTime);
         }
     }
+    
+    
+    /*void OnTriggerEnter(Collider other)
+   {
+       if (other.gameObject.Layer == "Obstacles")
+       {
 
+       }
+   }*/
 }
