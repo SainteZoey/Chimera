@@ -19,7 +19,7 @@ public class Boss_CTRL : MonoBehaviour
             SpawnTiming -= Time.fixedDeltaTime;
             if (SpawnTiming <= 0.0f)
             {
-                gameObject.GetComponent<Animator>();
+                gameObject.GetComponent<Animator>(); // rampe
             }
         }
         else
@@ -28,11 +28,4 @@ public class Boss_CTRL : MonoBehaviour
         }
     }
 
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Player")
-    //    {
-    //        SceneManager.LoadScene("Scenes/GameOver");
-    //    }
-    //}
 }

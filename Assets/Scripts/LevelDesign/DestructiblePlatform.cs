@@ -7,10 +7,11 @@ public class DestructiblePlatform : MonoBehaviour
     public float ExplosionForce = 10;
     public float ExplosionRadius = 10;
     public Transform explosionSource;
-
+    public GameObject fx;
     public void PlayExplosion()
     {
         Destroy(explosionSource.position);
+        Instantiate(fx, transform.position, Quaternion.identity);
     }
 
     public void Destroy(Vector3 positionExplosion)
