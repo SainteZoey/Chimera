@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76d8ee0b9dda0749987c5a84b4640a8, type: 3}
   m_Name: TemporarySaveData
   m_EditorClassIdentifier: 
-  ChosenPath: 1
+  ChosenPath: -1

@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ScnLiz.unity
     guid: a2809bfb0e0e0f3448f48449950b7dc6
   - enabled: 1
-    path: Assets/Scenes/ScnLea.unity
+    path: Assets/Scenes/ScnGameplay.unity
     guid: d2cf62028bc7205429fa6608aaba54be
   - enabled: 1
     path: Assets/Scenes/ScnZoey.unity
