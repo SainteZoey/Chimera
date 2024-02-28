@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Boss
+  - Death
   layers:
   - Default
   - TransparentFX
