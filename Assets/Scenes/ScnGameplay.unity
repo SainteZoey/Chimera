@@ -16327,6 +16327,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8811617408318127151, guid: f0ca6c22f2bd08b458cf8b3a2808ae85,
         type: 3}
+      propertyPath: Grounded
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811617408318127151, guid: f0ca6c22f2bd08b458cf8b3a2808ae85,
+        type: 3}
       propertyPath: MoveSpeed
       value: 5
       objectReference: {fileID: 0}
