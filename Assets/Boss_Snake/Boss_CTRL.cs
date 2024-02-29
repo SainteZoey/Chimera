@@ -13,16 +13,9 @@ public class Boss_CTRL : MonoBehaviour
 
     public Transform scalableCollider;
 
-    public GameObject Character;
-
-
-
-     void Update()
-    {
-        gameObject.transform.LookAt(Character.transform);
-    }
     void FixedUpdate()
     {
+        
         if (SpawnTiming > 0.0f)
         {
             SpawnTiming -= Time.fixedDeltaTime;
@@ -43,10 +36,9 @@ public class Boss_CTRL : MonoBehaviour
     }
 
 
-    
+
     // boss dead s'arète pooo
     // le monstre nous surveille dans le mur
-    // le tuto
 
 
     void OnTriggerEnter(Collider other)
@@ -55,6 +47,12 @@ public class Boss_CTRL : MonoBehaviour
         if (other.gameObject.TryGetComponent<DestructiblePlatform>(out var destructiblePlatform))
         {
             destructiblePlatform.PlayExplosion();
+        }
+        if (other.gameObject.tag == "Death")
+        {
+            
+            gameObject.GetComponentInChildren<Animator>().SetBool("Death", true);
+            this.enabled = false;
         }
     }
 }

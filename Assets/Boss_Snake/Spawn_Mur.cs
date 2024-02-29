@@ -13,16 +13,6 @@ public class Spawn_Mur : MonoBehaviour
 
     bool HasPlayed;
 
-    void Update()
-    {
-
-
-        if (HasPlayed == true)
-        {
-            Bossdisactived.SetActive(false);
-            gameObject.SetActive(false);
-        }
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (HasPlayed == false)
@@ -31,8 +21,7 @@ public class Spawn_Mur : MonoBehaviour
             {
                 HasPlayed = true;
                 Instantiate(GameObjectToSpawn, spawnPosition.position, transform.rotation);
-                //Boss_CTRL.CurrentBoss.enabled = false;
-                //Bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
+                
             }
         }
     }
