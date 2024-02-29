@@ -16,7 +16,7 @@ public class Spawn_Mur : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Boss = Instantiate(GameObjectToSpawn, spawnPosition.position, spawnPosition.rotation);
-            transform.LookAt(target);
+            
         }
     }
 

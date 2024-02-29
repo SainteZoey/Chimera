@@ -43,6 +43,7 @@ public class Boss_CTRL : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+
         if (other.gameObject.TryGetComponent<DestructiblePlatform>(out var destructiblePlatform))
         {
             destructiblePlatform.PlayExplosion();
