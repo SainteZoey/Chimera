@@ -11,6 +11,8 @@ public class Boss_CTRL : MonoBehaviour
     public float Speed;
     public static Boss_CTRL CurrentBoss;
 
+    public Transform scalableCollider;
+
     void FixedUpdate()
     {
         if (SpawnTiming > 0.0f)
@@ -26,7 +28,11 @@ public class Boss_CTRL : MonoBehaviour
             Rb.MovePosition(Rb.transform.position + Rb.transform.forward * Speed * Time.fixedDeltaTime);
         }
     }
-    
+
+    public void Init(float scalableColliderSize)
+    {
+        scalableCollider.localScale = new Vector3(scalableColliderSize, scalableCollider.localScale.y, scalableCollider.localScale.z);
+    }
 
 
     // les trigger des différentes fins sont bug +
@@ -40,14 +46,11 @@ public class Boss_CTRL : MonoBehaviour
     // le tuto
 
 
-
-
-
-    /*void OnTriggerEnter(Collider other)
-   {
-       if (other.gameObject.Layer == "Obstacles")
-       {
-            DestructiblePlatform = true;
-       }
-   }*/
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.TryGetComponent<DestructiblePlatform>(out var destructiblePlatform))
+        {
+            destructiblePlatform.PlayExplosion();
+        }
+    }
 }

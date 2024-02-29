@@ -9,6 +9,16 @@ public class DestructiblePlatform : MonoBehaviour
     public Transform explosionSource;
     public GameObject fx;
 
+    public Transform bodiesParent;
+
+    void Start()
+    {
+        if(bodiesParent == null)
+        {
+            bodiesParent = transform;
+        }
+    }
+
     public void PlayExplosion()
     {
         Destroy(explosionSource.position);
@@ -17,7 +27,7 @@ public class DestructiblePlatform : MonoBehaviour
 
     public void Destroy(Vector3 positionExplosion)
     {
-        Rigidbody[] Bodies = GetComponentsInChildren<Rigidbody>();
+        Rigidbody[] Bodies = bodiesParent.GetComponentsInChildren<Rigidbody>();
         foreach (Rigidbody b in Bodies)
         {
             b.isKinematic = false;

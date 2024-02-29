@@ -153,4 +153,5 @@ MonoBehaviour:
   GameObjectToSpawn: {fileID: 417727173020483204, guid: bb594455e751c7d49a3372eb105f6e8c,
     type: 3}
   spawnPosition: {fileID: 1653399836069010349}
+  ScalableColliderSize: 9
   playOnce: 1
