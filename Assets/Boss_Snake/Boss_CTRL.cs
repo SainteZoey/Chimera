@@ -35,14 +35,9 @@ public class Boss_CTRL : MonoBehaviour
     }
 
 
-    // les trigger des différentes fins sont bug +
-    // boss dead s'arète pooo +
-    //  rochers qui explosent au passage du monstre +
-    // cam est chelou ( saut / obstacles ) +
-    // les obstacles ne permettent pas de sauter +
-
-
-    // a faire le regard du monstre pop dans le mur
+    
+    // boss dead s'arète pooo
+    // le monstre nous surveille dans le mur
     // le tuto
 
 

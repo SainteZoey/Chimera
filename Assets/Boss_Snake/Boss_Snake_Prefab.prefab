@@ -77,7 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnTiming: 1
   Rb: {fileID: 7852680280273475934}
-  Speed: 8
+  Speed: 5
   scalableCollider: {fileID: 3014044357154255302}
 --- !u!1 &2676016468733974477
 GameObject:
