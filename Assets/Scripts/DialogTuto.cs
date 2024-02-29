@@ -1,11 +1,12 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class Dialog : MonoBehaviour
+public class DialogTuto : MonoBehaviour
 {
+    public bool IsPlaying;
     public GameObject DialogRoot;
     public TextMeshProUGUI characterNameText;
     public TextMeshProUGUI characterDialogText;
@@ -13,7 +14,7 @@ public class Dialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        IsPlaying = true;
     }
 
     // Update is called once per frame
