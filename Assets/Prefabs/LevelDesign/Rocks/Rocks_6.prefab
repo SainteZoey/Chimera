@@ -73,11 +73,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocks_6
       objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7f5aa511756d0c64a8a0eaed918dcc20,
-        type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
     - target: {fileID: 3526379527533480944, guid: 7f5aa511756d0c64a8a0eaed918dcc20,
         type: 3}
       propertyPath: m_Layer

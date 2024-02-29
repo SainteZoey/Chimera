@@ -7,12 +7,11 @@ public class ChosenPathTrigger : MonoBehaviour
     public TemporarySaveData saveData;
     public int chosenPath;
 
-    public void ChoosePath()
+    void OnTriggerEnter(Collider other)
     {
-        saveData.ChosenPath = chosenPath;
-
+        if (other.gameObject.tag == "Player")
+        {
+            saveData.ChosenPath = chosenPath;
+        }
     }
-
-        
-
 }
