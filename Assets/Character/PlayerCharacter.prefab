@@ -383,16 +383,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3957782524123411102, guid: 3c42fd996dd3404439010b30fb2d0eda,
+        type: 3}
+      propertyPath: m_Name
+      value: Chimera
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3c42fd996dd3404439010b30fb2d0eda,
         type: 3}
       propertyPath: m_Name
       value: ModelisationPersoPrincipal
       objectReference: {fileID: 0}
+    - target: {fileID: 3779745573541866595, guid: 3c42fd996dd3404439010b30fb2d0eda,
+        type: 3}
+      propertyPath: m_Name
+      value: Snake
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -3957782524123411102, guid: 3c42fd996dd3404439010b30fb2d0eda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2135402638257559415}
+    - targetCorrespondingSourceObject: {fileID: 3779745573541866595, guid: 3c42fd996dd3404439010b30fb2d0eda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4089336913366745106}
   m_SourcePrefab: {fileID: 100100000, guid: 3c42fd996dd3404439010b30fb2d0eda, type: 3}
+--- !u!1 &4474601785177619776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3957782524123411102, guid: 3c42fd996dd3404439010b30fb2d0eda,
+    type: 3}
+  m_PrefabInstance: {fileID: 8578191115448430626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2135402638257559415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4474601785177619776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a204281876fe34f9e1aebb035b110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterAvatar: {fileID: 21300000, guid: 57f6a1493402b0d468705aa26a1d518c, type: 3}
+  CharacterName: Chimera
+  CharacterDialog: 
+--- !u!1 &4863748837768322113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3779745573541866595, guid: 3c42fd996dd3404439010b30fb2d0eda,
+    type: 3}
+  m_PrefabInstance: {fileID: 8578191115448430626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4089336913366745106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4863748837768322113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a204281876fe34f9e1aebb035b110e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterAvatar: {fileID: 21300000, guid: 582df78e607637a4c8fdf21959cff8a2, type: 3}
+  CharacterName: Bobby
+  CharacterDialog: 
 --- !u!4 &8106868709744334793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c42fd996dd3404439010b30fb2d0eda,
