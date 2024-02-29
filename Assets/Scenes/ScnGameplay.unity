@@ -16604,6 +16604,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8811617408318127151, guid: f0ca6c22f2bd08b458cf8b3a2808ae85,
         type: 3}
+      propertyPath: GroundLayers.m_Bits
+      value: 577
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811617408318127151, guid: f0ca6c22f2bd08b458cf8b3a2808ae85,
+        type: 3}
       propertyPath: DisableCameraControl
       value: 0
       objectReference: {fileID: 0}
