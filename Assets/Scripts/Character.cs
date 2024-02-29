@@ -5,7 +5,6 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     public Sprite CharacterAvatar;
-    public string CharacterName;
     public string CharacterDialog;
     // Start is called before the first frame update
     void Start()
