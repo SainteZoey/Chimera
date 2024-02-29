@@ -5,18 +5,35 @@ using UnityEngine;
 public class Spawn_Mur : MonoBehaviour
 {
 
-    private GameObject Boss;
+    private Boss_CTRL Boss;
     public GameObject GameObjectToSpawn;
     public Transform spawnPosition;
+    GameObject Bossdisactived;
 
-    public Transform target;
 
+    bool HasPlayed;
+
+    void Update()
+    {
+
+
+        if (HasPlayed == true)
+        {
+            Bossdisactived.SetActive(false);
+            gameObject.SetActive(false);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (HasPlayed == false)
         {
-            Boss = Instantiate(GameObjectToSpawn, spawnPosition.position, spawnPosition.rotation);
-            
+            if (other.gameObject.tag == "Player")
+            {
+                HasPlayed = true;
+                Instantiate(GameObjectToSpawn, spawnPosition.position, transform.rotation);
+                //Boss_CTRL.CurrentBoss.enabled = false;
+                //Bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
+            }
         }
     }
 

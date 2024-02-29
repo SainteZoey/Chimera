@@ -79,6 +79,8 @@ MonoBehaviour:
   Rb: {fileID: 7852680280273475934}
   Speed: 5
   scalableCollider: {fileID: 3014044357154255302}
+  Character: {fileID: 9062886675832784795, guid: f0ca6c22f2bd08b458cf8b3a2808ae85,
+    type: 3}
 --- !u!1 &2676016468733974477
 GameObject:
   m_ObjectHideFlags: 0

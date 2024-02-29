@@ -37,13 +37,13 @@ public class Eboulement_trigger : MonoBehaviour
                 Boss_CTRL.CurrentBoss.enabled = false;
                 bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
             }
-            if (other.gameObject.tag == "Death")
+            /*if (other.gameObject.tag == "Death")
             {
                 Boss_CTRL.CurrentBoss.enabled = false;
                 bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
                 Boss.GetComponent<Animator>().SetBool("Death", true);
 
-            }
+            }*/
         }
     }
 

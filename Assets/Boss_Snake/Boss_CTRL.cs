@@ -13,6 +13,14 @@ public class Boss_CTRL : MonoBehaviour
 
     public Transform scalableCollider;
 
+    public GameObject Character;
+
+
+
+     void Update()
+    {
+        gameObject.transform.LookAt(Character.transform);
+    }
     void FixedUpdate()
     {
         if (SpawnTiming > 0.0f)
