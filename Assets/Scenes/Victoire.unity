@@ -350,7 +350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.75, y: 95.5}
+  m_AnchoredPosition: {x: 13.75, y: 105}
   m_SizeDelta: {x: 481.2137, y: 136.5812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &154530893
@@ -373,11 +373,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tu as pris le chemin le plus court. \nQuelle efficacit\xE9 !"
+  m_text: "Tu as pris le chemin le plus court. \nQuelle efficacit\xE9 ! (\u2022_\u2022)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7e074f4ba4eb4eb499d928dc439c9951, type: 2}
-  m_sharedMaterial: {fileID: -1486856277624368682, guid: 7e074f4ba4eb4eb499d928dc439c9951,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f120e8f58d5feb49968c0b1abe44353, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2f120e8f58d5feb49968c0b1abe44353, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -510,9 +509,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Victoire
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7e074f4ba4eb4eb499d928dc439c9951, type: 2}
-  m_sharedMaterial: {fileID: -1486856277624368682, guid: 7e074f4ba4eb4eb499d928dc439c9951,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f120e8f58d5feb49968c0b1abe44353, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2f120e8f58d5feb49968c0b1abe44353, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -778,11 +776,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1947227249}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.2499847, y: -102.250015}
-  m_SizeDelta: {x: 323.2872, y: 88.015686}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 15.930017, y: 78.74217}
+  m_SizeDelta: {x: 409.3205, y: 88.0157}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1163891400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,11 +801,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tu as pris le chemin le plus dangereux. \nQuelle t\xEAte brul\xE9e !"
+  m_text: "Tu as pris le chemin le plus dangereux. \nQuelle t\xEAte brul\xE9e ! (\u3186_\u3186)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 7e074f4ba4eb4eb499d928dc439c9951, type: 2}
-  m_sharedMaterial: {fileID: -1486856277624368682, guid: 7e074f4ba4eb4eb499d928dc439c9951,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2f120e8f58d5feb49968c0b1abe44353, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2f120e8f58d5feb49968c0b1abe44353, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
