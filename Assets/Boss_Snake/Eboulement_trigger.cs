@@ -10,6 +10,14 @@ public class Eboulement_trigger : MonoBehaviour
     public float desactivateBossDelay;
     GameObject bossdisactived;
     private Boss_CTRL Boss;
+
+    ScreenShake screenShake;
+
+    void Start()
+    {
+        screenShake = FindObjectOfType<ScreenShake>();
+    }
+
     void Update()
     {
         if (HasPlayed == true)
@@ -36,8 +44,9 @@ public class Eboulement_trigger : MonoBehaviour
 
                 Boss_CTRL.CurrentBoss.enabled = false;
                 bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
+                screenShake.ShakeRandom();
             }
-           
+
         }
     }
 

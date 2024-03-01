@@ -15,6 +15,13 @@ public class Spawn_Boss : MonoBehaviour
     public bool playOnce;
     bool played;
 
+    ScreenShake screenShake;
+
+    void Start()
+    {
+        screenShake = FindObjectOfType<ScreenShake>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && (!playOnce || !played))
@@ -24,6 +31,7 @@ public class Spawn_Boss : MonoBehaviour
             Boss.Init(ScalableColliderSize);
             Boss.GetComponentInChildren<Animator>().SetBool("Apparition",true);
             Boss_CTRL.CurrentBoss = Boss;
+            screenShake.ShakeRandom();
         }
     }
 
