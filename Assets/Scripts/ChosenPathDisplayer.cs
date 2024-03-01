@@ -11,7 +11,10 @@ public class ChosenPathDisplayer : MonoBehaviour
 
     void Start()
     {
-        chosenPathInfos[temporarySaveData.ChosenPath].SetActive(true);
+        if (temporarySaveData.ChosenPath >= 0)
+        {
+            chosenPathInfos[temporarySaveData.ChosenPath].SetActive(true);
+        }
 
     }
 

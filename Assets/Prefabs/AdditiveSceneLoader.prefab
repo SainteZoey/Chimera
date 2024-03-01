@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd605044b9580364183cf1821a7eea70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  additiveScenes:
-  - {fileID: 102900000, guid: d709be124b3ca3c4aa451960a00f484c, type: 3}
+  additiveScenesNames:
+  - ScnZoey

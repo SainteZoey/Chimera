@@ -46,7 +46,7 @@ public class DialogTuto : MonoBehaviour
     {
         if (currentSentenceDelay <= 0)
         {
-            if (starterAssetsInputs.jump && hasReleasedJump)
+            if (Input.GetKeyDown(KeyCode.Space) || (starterAssetsInputs.jump && hasReleasedJump))
             {
                 hasReleasedJump = false;
                 PlayNextSentence();

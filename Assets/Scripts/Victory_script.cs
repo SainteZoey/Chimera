@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Victory_script : MonoBehaviour
 {
-    public Object sceneToLoad;
+    public string sceneToLoad;
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(sceneToLoad.name);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
