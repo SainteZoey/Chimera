@@ -8,7 +8,7 @@ public class ChangementdeScene : MonoBehaviour
 {
     public Button button_return;
 
-    public Object sceneToLoad;
+    public string sceneToLoadName;
 
     void Start()
     {
@@ -18,6 +18,6 @@ public class ChangementdeScene : MonoBehaviour
     void action_button_retour()
     {
         Debug.Log("clic sur bouton");
-        SceneManager.LoadScene(sceneToLoad.name);
+        SceneManager.LoadScene(sceneToLoadName);
     }
 }

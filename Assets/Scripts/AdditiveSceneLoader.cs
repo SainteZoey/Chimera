@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class AdditiveSceneLoader : MonoBehaviour
 {
-    public Object[] additiveScenes;
+    public string[] additiveScenesNames;
     void Start()
     {
 #if !UNITY_EDITOR
-        foreach (var additiveScene in additiveScenes)
+        foreach (var additiveScene in additiveScenesNames)
         {
-            SceneManager.LoadScene(additiveScene.name, LoadSceneMode.Additive);
+            SceneManager.LoadScene(additiveScene, LoadSceneMode.Additive);
         }
 #endif
     }
