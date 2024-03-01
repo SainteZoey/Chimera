@@ -4944,7 +4944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84a0e6939553c64f94d517b57b92a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnTiming: 1
+  SpawnTiming: 0.5
   Rb: {fileID: 7852680280273475934}
   Speed: 6
   scalableCollider: {fileID: 3014044357154255302}
@@ -5307,7 +5307,7 @@ Transform:
   m_GameObject: {fileID: 2676016468733974477}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6.17}
+  m_LocalPosition: {x: 0, y: 0, z: 4.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5332,10 +5332,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.3986187
+  m_Radius: 1.1458752
   m_Height: 9.14
   m_Direction: 1
-  m_Center: {x: -0.23271585, y: 4.960055, z: 0.75894165}
+  m_Center: {x: -0.23271585, y: 4.960055, z: 0.50619817}
 --- !u!65 &1509562505103875792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5355,8 +5355,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 23.21, y: 12, z: 1}
-  m_Center: {x: -0.018661022, y: 6, z: 0.14999998}
+  m_Size: {x: 23.21, y: 12, z: 1.5774388}
+  m_Center: {x: -0.018661499, y: 6, z: 0.831702}
 --- !u!1 &3047737762924263507
 GameObject:
   m_ObjectHideFlags: 0
@@ -5638,7 +5638,7 @@ Transform:
   m_GameObject: {fileID: 6110745121432122494}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.12, z: 6.18}
+  m_LocalPosition: {x: 0, y: 0.12, z: 4.49}
   m_LocalScale: {x: 1, y: 7.1999993, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

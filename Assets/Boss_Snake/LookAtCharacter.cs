@@ -14,6 +14,7 @@ public class LookAtCharacter : MonoBehaviour
     void Update()
     {
         GetComponentInChildren<Animator>().SetBool("Mur", true);
+
         gameObject.transform.LookAt(Character.transform);
     }
 }
