@@ -69,7 +69,7 @@ public class DialogTuto : MonoBehaviour
     void PlayNextSentence()
     {
         Debug.Log("Next sentence!");
-        // si l'index ne dépasse pas la taille du tableau
+        // si l'index ne dï¿½passe pas la taille du tableau
         if (sentenceIndex < DialogInfos.Length)
         {
             if (playedOnce)
@@ -87,12 +87,12 @@ public class DialogTuto : MonoBehaviour
 
             if (DialogInfos[sentenceIndex].isOtherCharacter)
             {
-                // assigner l'avatar de l'autre personnage à l'image
+                // assigner l'avatar de l'autre personnage ï¿½ l'image
                 characterAvatarImage.sprite = otherCharacterAvatarSprite;
             }
             else
             {
-                // assigner l'avatar du personnage-jouer à l'image
+                // assigner l'avatar du personnage-jouer ï¿½ l'image
                 characterAvatarImage.sprite = playerCharacterAvatarSprite;
             }
             sentenceIndex++;
