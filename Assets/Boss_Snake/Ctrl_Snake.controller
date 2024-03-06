@@ -146,7 +146,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: Walk
-    m_EventTreshold: 0.5
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5762918975574787818}
   m_Solo: 0
@@ -277,12 +277,12 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: Walk
-    m_EventTreshold: 1
   - m_ConditionMode: 2
     m_ConditionEvent: Apparition
     m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: Walk
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 777249884404400681}
   m_Solo: 0
@@ -378,8 +378,8 @@ AnimatorStateMachine:
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 520, y: 120, z: 0}
+  m_AnyStatePosition: {x: 570, y: 80, z: 0}
   m_EntryPosition: {x: -250, y: 70, z: 0}
-  m_ExitPosition: {x: 480, y: 320, z: 0}
+  m_ExitPosition: {x: 570, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 777249884404400681}
