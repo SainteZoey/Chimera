@@ -42,8 +42,10 @@ public class Eboulement_trigger : MonoBehaviour
                 HasPlayed = true;
                 destructiblePlatform.PlayExplosion();
 
+                
                 Boss_CTRL.CurrentBoss.enabled = false;
                 bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
+                Boss.GetComponentInChildren<Animator>().SetBool("Idle",true);
                 screenShake.ShakeRandom();
             }
 
