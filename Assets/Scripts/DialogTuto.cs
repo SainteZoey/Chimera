@@ -46,7 +46,11 @@ public class DialogTuto : MonoBehaviour
     {
         if (currentSentenceDelay <= 0)
         {
+<<<<<<< Updated upstream
             if (Input.GetKeyDown(KeyCode.Space) || (starterAssetsInputs.jump && hasReleasedJump))
+=======
+            if (starterAssetsInputs.jump && hasReleasedJump)
+>>>>>>> Stashed changes
             {
                 hasReleasedJump = false;
                 PlayNextSentence();
