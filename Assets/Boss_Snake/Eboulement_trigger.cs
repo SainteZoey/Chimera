@@ -45,7 +45,7 @@ public class Eboulement_trigger : MonoBehaviour
                 
                 Boss_CTRL.CurrentBoss.enabled = false;
                 bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
-                Boss.GetComponentInChildren<Animator>().SetFloat("Walk",0f);
+                Boss.GetComponentInChildren<Animator>().SetBool("Idle",true);
                 screenShake.ShakeRandom();
             }
 
