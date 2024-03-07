@@ -9,11 +9,7 @@ public class AdditiveSceneLoader : MonoBehaviour
     void Start()
     {
 #if !UNITY_EDITOR
-<<<<<<< Updated upstream
         foreach (var additiveScene in additiveScenesNames)
-=======
-        foreach (var additiveScene in additiveScenes)
->>>>>>> Stashed changes
         {
             SceneManager.LoadScene(additiveScene, LoadSceneMode.Additive);
         }
