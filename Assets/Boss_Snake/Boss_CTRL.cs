@@ -37,10 +37,6 @@ public class Boss_CTRL : MonoBehaviour
 
 
 
-    // boss dead s'arète pooo
-    // le monstre nous surveille dans le mur
-
-
     void OnTriggerEnter(Collider other)
     {
 
