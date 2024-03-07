@@ -193,7 +193,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Apparition
-  m_Speed: 0.8
+  m_Speed: 0.4
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 6006801503583452804}
@@ -207,7 +207,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 1827226128182048838, guid: 8b6c8b46d7e5d43408dff6fbce44c1c5,
+  m_Motion: {fileID: 1827226128182048838, guid: 92958ca1839892f4792077ee693069e7,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -221,20 +221,17 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: Walk
-    m_EventTreshold: 1
+  m_Conditions: []
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 777249884404400681}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.024367005
-  m_TransitionOffset: 0.2280219
-  m_ExitTime: 0.96055794
-  m_HasExitTime: 0
+  m_TransitionDuration: 0.024367064
+  m_TransitionOffset: 0
+  m_ExitTime: 0.9358321
+  m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
