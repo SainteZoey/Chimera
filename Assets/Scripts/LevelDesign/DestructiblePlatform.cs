@@ -11,6 +11,8 @@ public class DestructiblePlatform : MonoBehaviour
 
     public Transform bodiesParent;
 
+    public AudioSource Kaboum;
+
     void Start()
     {
         if(bodiesParent == null)
@@ -22,6 +24,7 @@ public class DestructiblePlatform : MonoBehaviour
     public void PlayExplosion()
     {
         Destroy(explosionSource.position);
+        Kaboum.Play();
         Instantiate(fx, transform.position, Quaternion.identity);
     }
 
