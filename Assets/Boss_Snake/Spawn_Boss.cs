@@ -15,26 +15,32 @@ public class Spawn_Boss : MonoBehaviour
     public bool playOnce;
     bool played;
 
+    
+
     ScreenShake screenShake;
 
     void Start()
     {
         screenShake = FindObjectOfType<ScreenShake>();
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && (!playOnce || !played))
         {
+
+            
             played = true;
             Boss = Instantiate(GameObjectToSpawn, spawnPosition.position, spawnPosition.rotation).GetComponent<Boss_CTRL>();
             Boss.Init(ScalableColliderSize);
-
+            
             //Boss.GetComponentInChildren<Animator>().SetBool("Apparition",true);
             //GameObject.Find("Boss_Snake_Prefab").GetComponentInChildren<Animator>().SetBool("Apparition", true);
 
             Boss_CTRL.CurrentBoss = Boss;
             screenShake.ShakeRandom();
+            
         }
     }
 

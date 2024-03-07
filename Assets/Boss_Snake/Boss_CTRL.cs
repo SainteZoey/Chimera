@@ -13,6 +13,7 @@ public class Boss_CTRL : MonoBehaviour
 
     public Transform scalableCollider;
 
+
     void FixedUpdate()
     {
         
@@ -21,6 +22,7 @@ public class Boss_CTRL : MonoBehaviour
             SpawnTiming -= Time.fixedDeltaTime;
             if (SpawnTiming <= 0.0f)
             {
+                
                 gameObject.GetComponentInChildren<Animator>().SetFloat("Walk", 1.1f);
             }
         }
