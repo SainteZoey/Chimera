@@ -9,13 +9,17 @@ public class Eboulement_trigger : MonoBehaviour
     bool HasPlayed;
     public float desactivateBossDelay;
     GameObject bossdisactived;
-    private Boss_CTRL Boss;
+    public Boss_CTRL Boss;
+
+    public float timerDesactivateBoss;
+
 
     ScreenShake screenShake;
 
     void Start()
     {
         screenShake = FindObjectOfType<ScreenShake>();
+        timerDesactivateBoss = 0.0f;
     }
 
     void Update()
@@ -43,10 +47,20 @@ public class Eboulement_trigger : MonoBehaviour
                 destructiblePlatform.PlayExplosion();
 
                 
-                Boss_CTRL.CurrentBoss.enabled = false;
-                bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
-                Boss.GetComponentInChildren<Animator>().SetBool("Idle",true);
+                
+                Boss_CTRL.CurrentBoss.gameObject.GetComponentInChildren<Animator>().SetBool("Idle",true);
                 screenShake.ShakeRandom();
+
+                timerDesactivateBoss += Time.deltaTime;
+
+                if (timerDesactivateBoss > 2.0f)
+                {
+                    HasPlayed = false;
+                    bossdisactived = Boss_CTRL.CurrentBoss.gameObject;
+                    Boss_CTRL.CurrentBoss.enabled = false;
+                    
+                    timerDesactivateBoss = 0.0f;
+                }
             }
 
         }

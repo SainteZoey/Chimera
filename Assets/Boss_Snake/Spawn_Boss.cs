@@ -30,7 +30,7 @@ public class Spawn_Boss : MonoBehaviour
             Boss = Instantiate(GameObjectToSpawn, spawnPosition.position, spawnPosition.rotation).GetComponent<Boss_CTRL>();
             Boss.Init(ScalableColliderSize);
 
-            Boss.GetComponentInChildren<Animator>().SetBool("Apparition",true);
+            //Boss.GetComponentInChildren<Animator>().SetBool("Apparition",true);
             //GameObject.Find("Boss_Snake_Prefab").GetComponentInChildren<Animator>().SetBool("Apparition", true);
 
             Boss_CTRL.CurrentBoss = Boss;
