@@ -23109,6 +23109,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21d4b19620515274e968f018c70f131e, type: 3}
+--- !u!4 &657899422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+    type: 3}
+  m_PrefabInstance: {fileID: 1038482703}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &658385462 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
@@ -36675,6 +36681,89 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mur_rocheux_prefab (44)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a669aa8884d5f904ea7942e8b517e716, type: 3}
+--- !u!1001 &1038482703
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1588068515}
+    m_Modifications:
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.1024394
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.1024394
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.1024394
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.806646
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 23.637997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 124.82391
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531767491582424948, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2164611592723017166, guid: a669aa8884d5f904ea7942e8b517e716,
+        type: 3}
+      propertyPath: m_Name
+      value: mur_rocheux_prefab (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -57780,6 +57869,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1804139844}
+  - {fileID: 657899422}
   - {fileID: 512867942}
   - {fileID: 1519330856}
   - {fileID: 1812969639}

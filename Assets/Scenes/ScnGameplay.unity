@@ -1014,6 +1014,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rec13 (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 5161357535794153620, guid: 8e37abf3e27a8ba4da9c34cd7721cc2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3569,6 +3574,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rec13 (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161357535794153620, guid: 8e37abf3e27a8ba4da9c34cd7721cc2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11082,6 +11092,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rec13 (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 5161357535794153620, guid: 8e37abf3e27a8ba4da9c34cd7721cc2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17595,6 +17610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rec13 (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 5161357535794153620, guid: 8e37abf3e27a8ba4da9c34cd7721cc2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18928,6 +18948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rec13 (89)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161357535794153620, guid: 8e37abf3e27a8ba4da9c34cd7721cc2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28834,6 +28859,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rec13 (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 5161357535794153620, guid: 8e37abf3e27a8ba4da9c34cd7721cc2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28999,6 +29029,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Rec13 (83)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161357535794153620, guid: 8e37abf3e27a8ba4da9c34cd7721cc2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
