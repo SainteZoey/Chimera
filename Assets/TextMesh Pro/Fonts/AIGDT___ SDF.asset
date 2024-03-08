@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: AIGDT___ SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -415867631
   material: {fileID: 4384938531599908579}
-  materialHashCode: 0
+  materialHashCode: -1468074735
   m_Version: 1.1.0
   m_SourceFontFileGUID: 00a8e3c994ea0ae41bfa30b6e2a562cc
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 00a8e3c994ea0ae41bfa30b6e2a562cc,
@@ -256,9 +256,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.875
+    - _ScaleRatioB: 0.7109375
+    - _ScaleRatioC: 0.7109375
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
