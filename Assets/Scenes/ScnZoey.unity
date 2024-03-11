@@ -9572,10 +9572,10 @@ MonoBehaviour:
     isOtherCharacter: 1
   - dialogText: "C'est ma sp\xE9cialit\xE9!"
     isOtherCharacter: 0
-  - dialogText: "Tant mieux! N'oublie pas que pour sauter, tu peux appuyer sur espace
+  - dialogText: "Tant mieux! N'oublie pas que pour sauter, tu peux appuyer sur Espace
       sur ton clavier ou sur A \xE0 la manette!"
     isOtherCharacter: 1
-  - dialogText: Tu peux aussi courir en appuyant sur shift ou sur LT sur ta manette!
+  - dialogText: Tu peux aussi courir en appuyant sur Shift ou sur LT sur ta manette!
     isOtherCharacter: 1
   - dialogText: Euh... Qu'est-ce que tu racontes??
     isOtherCharacter: 0
