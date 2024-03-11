@@ -49,6 +49,8 @@ MonoBehaviour:
   ExplosionRadius: 10
   explosionSource: {fileID: 0}
   fx: {fileID: 1040608886635896, guid: a97415c6b57076f41a6621a7b51d63a3, type: 3}
+  bodiesParent: {fileID: 0}
+  Kaboum: {fileID: 0}
 --- !u!1001 &5239774130135735744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112,6 +114,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1933908703639069719, guid: ce700c510b0a8e848ac683de19df18c5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff41d9a4a829a83489d7b639ee3e6bd5, type: 2}
+    - target: {fileID: 7003523395699787414, guid: ce700c510b0a8e848ac683de19df18c5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff41d9a4a829a83489d7b639ee3e6bd5, type: 2}
+    - target: {fileID: 8585132638537960683, guid: ce700c510b0a8e848ac683de19df18c5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff41d9a4a829a83489d7b639ee3e6bd5, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8102455509742201429, guid: ce700c510b0a8e848ac683de19df18c5, type: 3}
