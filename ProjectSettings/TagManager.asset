@@ -8,6 +8,7 @@ TagManager:
   - Boss
   - Death
   - FxTemporaire
+  - Rock
   layers:
   - Default
   - TransparentFX
