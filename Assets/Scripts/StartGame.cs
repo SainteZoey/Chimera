@@ -18,8 +18,6 @@ public class ExampleClass : MonoBehaviour
     {
         //StartCoroutine(coroutine());
 
-        Debug.Log("Lance l'action de supprimer des rocks toutes les x secondes");
-
         timerRock = 0.0f;
 
     }
@@ -39,16 +37,12 @@ public class ExampleClass : MonoBehaviour
 
                 if (rock.tag == "Rock")
                 {
-                    Debug.Log("C'est un rock");
-
                     if (rock.GetComponent<Rigidbody>() != null)
                     {
 
                         if (rock.GetComponent<Rigidbody>().velocity.magnitude > 0.01) // vitesse
                         {
-                            Debug.Log("Le rock bouge");
                             randomNumber = Random.Range(0.0f, 2.0f);  // random
-                            Debug.Log("randomNumber = " + randomNumber.ToString());
 
                             if (randomNumber <= 1.5f)
                             {
