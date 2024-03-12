@@ -152,6 +152,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -1719570854284333124, guid: f8573b5a2468e7948b5857ab6edb0d1f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 384091372448585267, guid: f8573b5a2468e7948b5857ab6edb0d1f,
         type: 3}
       propertyPath: m_Layer
@@ -166,6 +171,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3526379527533480944, guid: f8573b5a2468e7948b5857ab6edb0d1f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 7173206224139215945, guid: f8573b5a2468e7948b5857ab6edb0d1f,
         type: 3}

@@ -9,7 +9,7 @@ public class Destroymovingobject : MonoBehaviour
 
     private void Start()
     {
-         randomNumber = Random.Range(0.0f, 2.0f);
+         //randomNumber = Random.Range(0.0f, 2.0f);
     }
 
     void LateUpdate()
@@ -31,7 +31,8 @@ public class Destroymovingobject : MonoBehaviour
             }
             if (aremoving == true)
             {
-                if(randomNumber <= 1.0f)
+                randomNumber = Random.Range(0.0f, 2.0f);
+                if (randomNumber <= 1.0f)
                 {
                     Destroy(gameObject);
                 }
@@ -41,6 +42,5 @@ public class Destroymovingobject : MonoBehaviour
                 }
             }
         }
-        
     }
 }

@@ -13,6 +13,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -8882989584347868512, guid: 9b7372598a16c9748bd1049046cb7ac5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9b7372598a16c9748bd1049046cb7ac5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -73,6 +78,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 695546300896866960, guid: 9b7372598a16c9748bd1049046cb7ac5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9b7372598a16c9748bd1049046cb7ac5,
         type: 3}
       propertyPath: m_Name
@@ -97,6 +107,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984601992485008520, guid: 9b7372598a16c9748bd1049046cb7ac5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
