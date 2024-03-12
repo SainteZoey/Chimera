@@ -64,7 +64,7 @@ public class DialogTuto : MonoBehaviour
 
     void PlayNextSentence()
     {
-        Debug.Log("Next sentence!");
+        //Debug.Log("Next sentence!");
         // si l'index ne d�passe pas la taille du tableau
         if (sentenceIndex < DialogInfos.Length)
         {
