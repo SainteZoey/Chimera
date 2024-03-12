@@ -31,9 +31,14 @@ public class Destroymovingobject : MonoBehaviour
             }
             if (aremoving == true)
             {
-                if(randomNumber >= 1.0f)
+                if(randomNumber <= 1.0f)
                 {
+                    Debug.Log("RandomNumber est en dessous de 1");
                     Destroy(Rock);
+                }
+                else if (randomNumber > 1.0f)
+                {
+                    Debug.Log("randomNumber est au dessus de 1 ");
                 }
             }
         }
