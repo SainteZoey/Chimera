@@ -22,42 +22,38 @@ public class Dialogwithobject : MonoBehaviour
 
     int sentenceIndex;
 
-    StarterAssetsInputs starterAssetsInputs;
-
-    bool hasReleasedJump = true;
-
     float startSentenceDelay = 0.75f;
     float sentenceDelay = 0.2f;
 
     float currentSentenceDelay;
 
     bool playedOnce;
+    public bool IsPlaying;
 
     // Start is called before the first frame update
     void Start()
     {
-        starterAssetsInputs = FindObjectOfType<StarterAssetsInputs>();
+
     }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
-            Debug.Log("Il y a un crane dans ta zone");
-                if (currentSentenceDelay <= 0)
+            if (currentSentenceDelay <= 0)
+            {
+                if (Input.GetKeyDown(KeyCode.LeftAlt))
                 {
-                    if (Input.GetKeyDown(KeyCode.LeftAlt))
-                    {
-                        DialogRoot.gameObject.SetActive(true);
-                        Time.timeScale = 0f;
-                        PlayNextSentence();
-                        Debug.Log("Tu as appuyé sur espace pour lancer le dialogue.");
-                    }
+                    DialogRoot.gameObject.SetActive(true);
+                    Time.timeScale = 0f;
+                    PlayNextSentence();
+                    Debug.Log("Tu as appuyé sur espace pour lancer le dialogue.");
                 }
-                else
-                {
-                    currentSentenceDelay -= Time.unscaledDeltaTime;
-                }
+            }
+            else
+            {
+                currentSentenceDelay -= Time.unscaledDeltaTime;
+            }
         }
     }
 
