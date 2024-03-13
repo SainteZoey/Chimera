@@ -191,21 +191,41 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7a4866cd6c84fe747bf69441f3a39526, type: 2}
+    - target: {fileID: -3967082880966691646, guid: f7dcbff3f2f0db543b14ac181aea0012,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -3180377983703759979, guid: f7dcbff3f2f0db543b14ac181aea0012,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7a4866cd6c84fe747bf69441f3a39526, type: 2}
+    - target: {fileID: -298717334289059223, guid: f7dcbff3f2f0db543b14ac181aea0012,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f7dcbff3f2f0db543b14ac181aea0012,
         type: 3}
       propertyPath: m_Name
       value: Plateform_Rock_UV
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f7dcbff3f2f0db543b14ac181aea0012,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6922036317624017439, guid: f7dcbff3f2f0db543b14ac181aea0012,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7a4866cd6c84fe747bf69441f3a39526, type: 2}
+    - target: {fileID: 7868539904098271374, guid: f7dcbff3f2f0db543b14ac181aea0012,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -287,7 +307,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4732281417192281161}
   serializedVersion: 4
-  m_Mass: 500
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -341,7 +361,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7236383660010397701}
   serializedVersion: 4
-  m_Mass: 500
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -395,7 +415,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8251960016243593954}
   serializedVersion: 4
-  m_Mass: 500
+  m_Mass: 20
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
