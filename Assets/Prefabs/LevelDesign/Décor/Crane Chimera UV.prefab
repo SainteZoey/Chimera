@@ -83,6 +83,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crane Chimera UV
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7c91d8b3b5b0bfb47805913e9ccd53b5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Interractive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -91,6 +96,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 9052332412610762880}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c91d8b3b5b0bfb47805913e9ccd53b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6497342675935144927}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c91d8b3b5b0bfb47805913e9ccd53b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 506262038856343406}
   m_SourcePrefab: {fileID: 100100000, guid: 7c91d8b3b5b0bfb47805913e9ccd53b5, type: 3}
 --- !u!1 &7091715938544620640 stripped
 GameObject:
@@ -113,9 +126,51 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.02813616, y: 0.019183673, z: 0.025678027}
-  m_Center: {x: -0.011172024, y: -0.009653544, z: 0.0074600973}
+  m_Size: {x: 0.03795772, y: 0.024044689, z: 0.046580918}
+  m_Center: {x: -0.010570987, y: -0.007223029, z: 0.007789841}
+--- !u!114 &6497342675935144927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7091715938544620640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1338fbe2a136e45933a2ffaa576a6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DialogRoot: {fileID: 0}
+  characterDialogText: {fileID: 0}
+  characterAvatarImage: {fileID: 0}
+  playerCharacterAvatarSprite: {fileID: 21300000, guid: 4917ff5bb92a8aa46a58d87a00688ba1,
+    type: 3}
+  otherCharacterAvatarSprite: {fileID: 0}
+  DialogInfos: []
+  perso: {fileID: 0}
+--- !u!64 &506262038856343406
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7091715938544620640}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4068373912626513877, guid: 7c91d8b3b5b0bfb47805913e9ccd53b5, type: 3}

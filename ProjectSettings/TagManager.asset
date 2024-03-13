@@ -9,6 +9,7 @@ TagManager:
   - Death
   - FxTemporaire
   - Rock
+  - Interractive
   layers:
   - Default
   - TransparentFX

@@ -63,5 +63,9 @@ public class ExampleClass : MonoBehaviour
         }
 
     }
-                  
+    private void OnTriggerStay(Collider other)
+    {
+        
+    }
+
 }
