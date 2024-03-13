@@ -27,7 +27,7 @@ public class ExampleClass : MonoBehaviour
 
         timerRock += Time.deltaTime;
 
-        if (timerRock > 1.0f)  // nombre de seconde
+        if (timerRock > 0.2f)  // nombre de seconde
         {
 
             Collider[] hitColliders = Physics.OverlapSphere(perso.transform.position, 10);  // le nombre 5 : taille de la sphere en metre
