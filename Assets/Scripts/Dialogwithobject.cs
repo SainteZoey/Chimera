@@ -12,6 +12,7 @@ public class Dialogwithobject : MonoBehaviour
 {
     public GameObject DialogRoot;
     public TextMeshProUGUI characterDialogText;
+    public GameObject TextInteraction;
     
     public Image characterAvatarImage;
 
@@ -22,8 +23,8 @@ public class Dialogwithobject : MonoBehaviour
 
     int sentenceIndex;
 
-    float startSentenceDelay = 0.75f;
-    float sentenceDelay = 0.2f;
+    float startSentenceDelay = 0.50f;
+    float sentenceDelay = 0.1f;
 
     float currentSentenceDelay;
 
@@ -40,21 +41,20 @@ public class Dialogwithobject : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (currentSentenceDelay <= 0)
-            {
-                if (Input.GetKeyDown(KeyCode.LeftAlt))
+            TextInteraction.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     DialogRoot.gameObject.SetActive(true);
-                    Time.timeScale = 0f;
+                    TextInteraction.SetActive(false);
                     PlayNextSentence();
                     Debug.Log("Tu as appuyé sur espace pour lancer le dialogue.");
                 }
-            }
-            else
-            {
-                currentSentenceDelay -= Time.unscaledDeltaTime;
-            }
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        TextInteraction.SetActive(false);
     }
 
 
@@ -64,16 +64,6 @@ public class Dialogwithobject : MonoBehaviour
         // si l'index ne d�passe pas la taille du tableau
         if (sentenceIndex < DialogInfos.Length)
         {
-            if (playedOnce)
-            {
-                currentSentenceDelay = sentenceDelay;
-            }
-            else
-            {
-                playedOnce = true;
-                currentSentenceDelay = startSentenceDelay;
-            }
-
             // assigner le la phrase en cours au characterDialogText
             characterDialogText.text = DialogInfos[sentenceIndex].dialogText;
 
@@ -93,7 +83,6 @@ public class Dialogwithobject : MonoBehaviour
         {
             // end dialog
             DialogRoot.gameObject.SetActive(false);
-            Time.timeScale = 1f;
         }
     }
 
