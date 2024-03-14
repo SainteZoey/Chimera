@@ -12,6 +12,7 @@ public class Dialogwithobject : MonoBehaviour
 {
     public GameObject DialogRoot;
     public TextMeshProUGUI characterDialogText;
+    public GameObject TextInteraction;
     
     public Image characterAvatarImage;
 
@@ -22,13 +23,12 @@ public class Dialogwithobject : MonoBehaviour
 
     int sentenceIndex;
 
-    float startSentenceDelay = 0.75f;
-    float sentenceDelay = 0.2f;
+    float startSentenceDelay = 0.50f;
+    float sentenceDelay = 0.1f;
 
     float currentSentenceDelay;
 
     bool playedOnce;
-    public bool IsPlaying;
 
     // Start is called before the first frame update
     void Start()
@@ -40,21 +40,19 @@ public class Dialogwithobject : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (currentSentenceDelay <= 0)
+            TextInteraction.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.LeftAlt))
             {
-                if (Input.GetKeyDown(KeyCode.LeftAlt))
-                {
                     DialogRoot.gameObject.SetActive(true);
-                    Time.timeScale = 0f;
+                    TextInteraction.SetActive(false);
                     PlayNextSentence();
                     Debug.Log("Tu as appuyé sur espace pour lancer le dialogue.");
-                }
-            }
-            else
-            {
-                currentSentenceDelay -= Time.unscaledDeltaTime;
             }
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        TextInteraction.SetActive(false);
     }
 
 
@@ -93,7 +91,6 @@ public class Dialogwithobject : MonoBehaviour
         {
             // end dialog
             DialogRoot.gameObject.SetActive(false);
-            Time.timeScale = 1f;
         }
     }
 
