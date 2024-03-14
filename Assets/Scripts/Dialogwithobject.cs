@@ -29,7 +29,6 @@ public class Dialogwithobject : MonoBehaviour
     float currentSentenceDelay;
 
     bool playedOnce;
-    public bool IsPlaying;
 
     // Start is called before the first frame update
     void Start()
@@ -42,14 +41,13 @@ public class Dialogwithobject : MonoBehaviour
         if (other.tag == "Player")
         {
             TextInteraction.SetActive(true);
-
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
+            if (Input.GetKeyDown(KeyCode.LeftAlt))
+            {
                     DialogRoot.gameObject.SetActive(true);
                     TextInteraction.SetActive(false);
                     PlayNextSentence();
                     Debug.Log("Tu as appuyé sur espace pour lancer le dialogue.");
-                }
+            }
         }
     }
     private void OnTriggerExit(Collider other)
@@ -64,6 +62,16 @@ public class Dialogwithobject : MonoBehaviour
         // si l'index ne d�passe pas la taille du tableau
         if (sentenceIndex < DialogInfos.Length)
         {
+            if (playedOnce)
+            {
+                currentSentenceDelay = sentenceDelay;
+            }
+            else
+            {
+                playedOnce = true;
+                currentSentenceDelay = startSentenceDelay;
+            }
+
             // assigner le la phrase en cours au characterDialogText
             characterDialogText.text = DialogInfos[sentenceIndex].dialogText;
 
